@@ -1,0 +1,4 @@
+curl -X POST ^
+  -H "Content-Type: application/json" ^
+  -d "{ \"message\":\"Benutzer eingeloggt\", \"eventType\":\"login\", \"userId\":\"abc123\", \"additionalData\":{\"ip\":\"192.168.1.1\",\"device\":\"mobile\"}, \"timestamp\":\"2025-05-30T12:00:00Z\" }" ^
+  http://localhost:5173/api/logging/create
